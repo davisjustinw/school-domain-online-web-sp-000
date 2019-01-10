@@ -22,7 +22,7 @@ class School
   
   def sort
     @roster.collect do |grade|
-      grade.first => grade.last.sort
+      {grade.first => grade.last.sort}
     end
   end
   
