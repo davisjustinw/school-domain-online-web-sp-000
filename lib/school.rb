@@ -21,8 +21,8 @@ class School
   end
   
   def sort
-    @roster.collect do |grade|
-      {grade.first => grade.last.sort}
+    @roster.each do |grade, students|
+      grade => students.sort
     end
   end
   
